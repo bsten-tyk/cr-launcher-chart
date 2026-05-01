@@ -88,6 +88,13 @@ See the `examples/` directory for complete value files:
 - `distributed-redis-cluster-with-secret.yaml` - DRC with a companion Secret
 - `distributed-redis-cluster-ha.yaml` - HA setup with cluster replicas
 
+## Releasing a New Version
+
+1. Update `version` in `cr-launcher/Chart.yaml`
+2. Commit and push to `main`
+
+The GitHub Actions workflow detects the version change, packages the chart, creates a GitHub Release, and updates the Helm repository index on `gh-pages`.
+
 ## Prerequisites
 
 - The target CRD must already be registered in the cluster
