@@ -3,6 +3,15 @@ entries:
   cr-launcher:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-05-01T23:31:21.38295695Z"
+    description: Generic Helm chart for deploying arbitrary Kubernetes Custom Resources
+    digest: d08fec9e3288e2acf16c9b64dfa11fad2faf86bb747f5f502370599d4579c852
+    name: cr-launcher
+    urls:
+    - https://github.com/bsten-tyk/cr-launcher-chart/releases/download/cr-launcher-0.1.1/cr-launcher-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-05-01T23:58:32.753288+03:00"
     description: Generic Helm chart for deploying arbitrary Kubernetes Custom Resources
     digest: a8d7478ccc253e6413bf9831191941295005a780a37c596054858fd214e8c565
@@ -10,4 +19,4 @@ entries:
     urls:
     - https://bsten-tyk.github.io/cr-launcher-chart/cr-launcher-0.1.0.tgz
     version: 0.1.0
-generated: "2026-05-01T23:58:32.75314+03:00"
+generated: "2026-05-01T23:31:21.382968202Z"
