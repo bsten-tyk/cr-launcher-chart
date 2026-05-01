@@ -1,0 +1,27 @@
+resources:
+  - apiVersion: redis.kun/v1alpha1
+    kind: DistributedRedisCluster
+    metadata:
+      name: tenant-redis
+      annotations:
+        redis.kun/scope: cluster-scoped
+    spec:
+      image: redis:5.0.4-alpine
+      masterSize: 3
+      clusterReplicas: 1
+      resources:
+        requests:
+          cpu: 200m
+          memory: 1Gi
+        limits:
+          cpu: 500m
+          memory: 1Gi
+      config:
+        appendonly: "yes"
+        maxmemory-policy: volatile-lfu
+        maxmemory: "900Mi"
+      storage:
+        type: persistent-claim
+        size: 2Gi
+        class: standard
+        deleteClaim: true
