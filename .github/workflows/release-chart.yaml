@@ -1,0 +1,18 @@
+name: Release Helm Chart
+on:
+  push:
+    branches: [main]
+    paths: ['cr-launcher/**']
+
+jobs:
+  release:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: helm/chart-releaser-action@v1
+        env:
+          CR_TOKEN: ${{ secrets.GITHUB_TOKEN }}

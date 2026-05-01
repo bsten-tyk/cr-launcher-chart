@@ -1,0 +1,18 @@
+# Patterns to ignore when building packages.
+.git
+.gitignore
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Project files
+PLAN.md
+docs/
+examples/
+.github/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+# resources is a list of arbitrary Kubernetes resource manifests.
+# Each entry must be a valid YAML object with apiVersion, kind, and metadata.
+# Helm template syntax within each manifest is supported.
+resources: []
+  # - apiVersion: redis.kun/v1alpha1
+  #   kind: DistributedRedisCluster
+  #   metadata:
+  #     name: {{ include "cr-launcher.fullname" . }}
+  #     annotations:
+  #       redis.kun/scope: cluster-scoped
+  #   spec:
+  #     image: redis:5.0.4-alpine
+  #     masterSize: 3
+  #     clusterReplicas: 0
+
+# nameOverride overrides the chart name
+nameOverride: ""
+# fullnameOverride overrides the full release name
+fullnameOverride: ""

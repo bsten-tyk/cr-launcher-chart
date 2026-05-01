@@ -1,0 +1,5 @@
+apiVersion: v2
+name: cr-launcher
+description: Generic Helm chart for deploying arbitrary Kubernetes Custom Resources
+version: 0.1.0
+appVersion: "1.0.0"
