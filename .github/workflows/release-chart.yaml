@@ -14,5 +14,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: helm/chart-releaser-action@v1
+        with:
+          charts_dir: .
         env:
           CR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
